@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Personal Portfolio</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Responsive css -->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/STMIK-IKMI-CIREBON.png">
+
+
+</head>
+
+<body>
+
+  <!-- start section navbar -->
+  <nav id="main-nav">
+    <div class="row">
+      <div class="container">
+
+        <div class="logo">
+          <a href="index.html" class="logo-text">Jeri</a>
+        </div>
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#portfolio" class="smoothScroll">Sertifikat</a></li>
+          <li><a href="#journal" class="smoothScroll">Hobi</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
+
+
+  <!-- start section header -->
+  <div id="header" class="home">
+
+    <div class="container">
+      <div class="header-content">
+        <h1>I'm <span class="typed"></span></h1>
+        <p> Developeur,</p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="https://www.facebook.com/share/1A9iy2nCex"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/je1mvc?igsh=MW45ODE1eHJxemtocg=="><i class="ion-social-instagram"></i></a></li>
+          <li><a href="https://api.whatsapp.com/send/?phone=%2B6283823283198&text&type=phone_number&app_absent=0"><i class="ion-social-whatsapp"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End section header -->
+
+
+  <!-- start section about us -->
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/about.jpg" class="img-responsive" alt="me">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="about-descr">
+
+            <p class="p-heading">Saya sangat senang bisa menyambut Anda di sini.</p>
+            <div class="motivasi-container">
+              <div id="motivasi-content" class="motivasi-content">
+
+
+              </div>
+          </div>
+              <script>
+                // Daftar kata-kata motivasi
+                const motivasiList = [
+                "Tidak ada yang lebih berharga daripada keberanian untuk melangkah maju, meskipun jalan di depan terasa gelap dan penuh rintangan.",
+                "Keberhasilan bukan tentang seberapa cepat kita sampai ke tujuan, tetapi tentang bagaimana kita bangkit setiap kali kita jatuh.",
+                "Ketika kita menghadapi kegagalan, itu bukanlah akhir, melainkan kesempatan untuk belajar, tumbuh, dan menjadi lebih kuat.",
+                "Jangan biarkan ketakutan menghentikanmu, karena dunia ini milik mereka yang berani menghadapi tantangan dan terus berusaha meskipun segala kesulitan datang silih berganti.",
+                "Setiap langkah kecil yang kita ambil dengan tekad adalah langkah menuju impian besar.",
+                "Keberanian adalah kunci untuk membuka pintu kesuksesan yang lebih besar.",
+                "Tidak ada yang mustahil bagi mereka yang tidak takut gagal dan terus mencoba.",
+                "Proses mungkin lambat, tapi dengan konsistensi, kita akan mencapai tujuan.",
+                "Jangan pernah menyerah, karena hal-hal baik membutuhkan waktu. Proses yang panjang akan membawa hasil yang tak ternilai.",
+                "Hidup ini penuh dengan kesempatan yang menunggu untuk dijelajahi. Jangan takut untuk keluar dari zona nyamanmu dan mengambil langkah pertama.",
+                "Ketika kamu merasa lelah dan ingin berhenti, ingatlah bahwa setiap perjuangan yang kamu hadapi akan membawa kamu lebih dekat pada tujuan yang telah lama kamu impikan.",
+                "Jika kamu merasa bahwa semuanya sudah terlalu sulit, ingatlah bahwa orang-orang besar juga melalui kesulitan yang sama. Yang membedakan mereka adalah tekad dan semangat untuk terus maju.",
+                "Kegagalan bukanlah akhir dari segalanya, melainkan awal dari perjalanan menuju kesuksesan yang lebih besar. Jangan takut untuk mencoba lagi dan lagi.",
+                "Jangan pernah takut untuk bermimpi besar, karena impian besar menciptakan langkah-langkah besar menuju kesuksesan yang luar biasa.",
+                "Selalu percayalah bahwa setiap tantangan yang datang adalah kesempatan untuk memperbaiki diri dan menjadi versi terbaik dari dirimu.",
+                "Keberhasilan sejati datang bukan karena kita selalu menang, tetapi karena kita tidak pernah menyerah dalam menghadapi tantangan yang datang.",
+                "Hidup ini adalah perjalanan panjang yang penuh dengan liku-liku, tapi ingatlah bahwa setiap rintangan yang kita hadapi akan membuat kita lebih kuat dan lebih bijaksana.",
+                "Kamu adalah pemegang kendali atas hidupmu. Jangan biarkan orang lain mendikte apa yang bisa dan tidak bisa kamu capai.",
+                "Terkadang, kesuksesan bukan tentang siapa yang tercepat, tetapi tentang siapa yang paling sabar dan terus berusaha, meski dengan segala tantangan yang datang."
+            ];
+        // Fungsi untuk memilih kata-kata motivasi acak
+        function getRandomMotivationalQuote() {
+          const randomIndex = Math.floor(Math.random() * motivasiList.length);
+          return motivasiList[randomIndex];
+      }
+
+      // Fungsi untuk menampilkan kata motivasi dengan efek masuk satu per satu
+      function displayMotivationalQuote() {
+          const motivasiText = getRandomMotivationalQuote();
+          const motivasiContainer = document.getElementById('motivasi-content');
+          motivasiContainer.innerHTML = ''; // Kosongkan kontainer
+
+          // Bagi kata-kata motivasi menjadi array kata-kata
+          const words = motivasiText.split(' ');
+
+          // Tambahkan setiap kata ke dalam kontainer dengan efek fadeIn
+          words.forEach((word, index) => {
+              const span = document.createElement('span');
+              span.textContent = word + ' ';
+              span.style.animationDelay = `${index * 0.10}s`; // Set delay untuk setiap kata
+              motivasiContainer.appendChild(span);
+          });
+
+          // Setelah kata-kata muncul, tambahkan efek keluar satu per satu setelah semua kata muncul
+          const totalWordsDuration = words.length * 0.5 + 1000; // Durasi total munculnya semua kata
+          setTimeout(() => {
+              motivasiContainer.classList.add('fade-out');  // Efek keluar satu per satu
+
+              setTimeout(() => {
+                  motivasiContainer.classList.remove('fade-out');
+                  displayMotivationalQuote();  // Ganti kata motivasi setelah keluar
+              }, 1000); // Menunggu animasi keluar selesai sebelum mengganti teks
+          }, totalWordsDuration + 15000); // Jeda 15 detik setelah semua kata keluar
+      }
+
+      // Panggil fungsi untuk menampilkan kata motivasi pertama kali
+      window.onload = function() {
+          displayMotivationalQuote();
+      }
+            </script>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section about us -->
+
+
+  <!-- start section services -->
+  <div id="services">
+    <div class="container">
+
+        <div class="services-carousel owl-theme">
+
+          <div class="services-block">
+
+            <i class="ion-ios-browsers-outline"></i>
+            <span>UI/UX DESIGN</span>
+            <p class="separator">Desain yang indah bukan hanya soal tampilan, tetapi juga tentang bagaimana pengguna merasa nyaman saat menggunakannya. </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-lightbulb-outline"></i>
+            <span>BRAND IDENTITY</span>
+            <p class="separator">Dari visi menjadi identitas yang kuat. </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-color-wand-outline"></i>
+            <span>WEB DESIGN</span>
+            <p class="separator">Membangun keindahan digital yang bermakna.</p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-social-android-outline"></i>
+            <span>MOBILE APPS</span>
+            <p class="separator">Menghubungkan dunia, hanya dengan satu sentuhan. </p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-analytics-outline"></i>
+            <span>Analytics</span>
+            <p class="separator">Mengubah angka menjadi wawasan berharga.</p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-camera-outline"></i>
+            <span>PHOTOGRAPHY</span>
+            <p class="separator">Mengabadikan momen, menciptakan kenangan. </p>
+
+          </div>
+
+        </div>
+
+    </div>
+
+  </div>
+  <!-- end section services -->
+
+  <!-- start section portfolio -->
+  <div id="portfolio" class="text-center paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>My Sertifikat</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="portfolio-list">
+
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all">all</li>
+              <li class="filter" data-filter=".Jaringan">Jaringan</li>
+              <li class="filter" data-filter=".Pemrograman">Pemrograman</li>
+              <li class="filter" data-filter=".DataScience">Data Science</li>
+              <li class="filter" data-filter=".MsOffice">Ms Office</li>
+            </ul>
+
+          </div>
+
+          <div class="portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Pemrograman">
+              <a class="popup-img" href="images/sertifikat/bnsp.jpg">
+                <img src="images/sertifikat/bnsp.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Pemrograman">
+              <a class="popup-img" href="images/sertifikat/vsga.jpg">
+                <img src="images/sertifikat/vsga.jpg"  alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Jaringan">
+              <a class="popup-img" href="images/sertifikat/ccna.jpg">
+                <img src="images/sertifikat/ccna.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Pemrograman">
+              <a class="popup-img" href="images/sertifikat/python.jpg">
+                <img src="images/sertifikat/python.jpg" alt="img">
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all DataScience">
+              <a class="popup-img" href="images/sertifikat/miner.jpg">
+                <img src="images/sertifikat/miner.jpg" alt="img">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all MsOffice">
+              <a class="popup-img" href="images/sertifikat/word.jpg">
+                <img src="images/sertifikat/word.jpg" alt="img">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all MsOffice">
+              <a class="popup-img" href="images/sertifikat/excell.jpg">
+                <img src="images/sertifikat/excell.jpg" alt="img">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all MsOffice">
+              <a class="popup-img" href="images/sertifikat/acces.jpg">
+                <img src="images/sertifikat/acces.jpg" alt="img">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all MsOffice">
+              <a class="popup-img" href="images/sertifikat/point.jpg">
+                <img src="images/sertifikat/point.jpg" alt="img">
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all Pemrograman">
+              <a class="popup-img" href="images/sertifikat/c++.jpg">
+                <img src="images/sertifikat/c++.jpg" alt="img">
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section portfolio -->
+
+
+  <!-- start section journal -->
+  <div id="journal" class="text-left paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Hobi</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="journal-block">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a ><img src="images/bola.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a >sepak bola</a></h4>
+                <p class="separator">Sepak bola mengajarkan kita tentang kerja keras, persatuan, dan ketekunan. 
+                  Setiap gol adalah hasil dari perjuangan bersama.
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a ><img src="images/keren.jpg" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a >Traveling</a></h4>
+                <p class="separator">Ke mana pun kita pergi, perjalanan sejati adalah menemukan keindahan di setiap langkah.
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a ><img src="images/game.png" class="img-responsive" alt="img"></a>
+
+              <div class="journal-txt">
+
+                <h4><a >bermain game</a></h4>
+                <p class="separator">Dalam dunia game, setiap tantangan adalah peluang untuk tumbuh dan setiap kemenangan adalah buah dari usaha.
+                </p>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section journal -->
+
+
+  <!-- start sectoion contact -->
+  <div id="contact" class="paddsection">
+    <div class="container">
+      <div class="contact-block1">
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="contact-contact">
+
+              <h2 class="mb-30">Publish journal</h2>
+
+              <ul class="contact-details">
+                <li>
+                  <a href="https://journal.trunojoyo.ac.id/nero/article/view/27462" target="_blank">
+                    PENENTUAN UKURAN BATCH OPTIMAL UNTUK PELATIHAN 
+                    YOLOV8 DALAM PENDETEKSIAN OBJEK PADA KENDARAAN 
+                    OTONOM
+                  </a>
+                </li>
+                <li><span>2024</span></li>
+                <li><span> NERO (Networking Engineering Research Operation)</span></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="row">
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+
+                <div class="col-lg-6">
+                  <div class="form-group contact-block1">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Masukan Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Masukan Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Tulis Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Pesan yang akan disampaikan"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start sectoion contact -->
+
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/share/1A9iy2nCex"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/je1mvc?igsh=MW45ODE1eHJxemtocg=="><i class="ion-social-instagram"></i></a></li>
+          <li><a href="https://api.whatsapp.com/send/?phone=%2B6283823283198&text&type=phone_number&app_absent=0"><i class="ion-social-whatsapp"></i></a></li>
+        </ul>
+
+      </div>
+
+      <p>&copy; Copyrights Jeri.</p>
+
+      <div class="credits">
+
+      </div>
+
+    </div>
+  </div>
+  <!-- End section footer -->
+ 
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
