@@ -188,7 +188,7 @@ const nextBtn = document.getElementById('nextBtn');
 const hideBtn = document.getElementById('hideBtn');
 const showBtn = document.getElementById('showBtn');
 
-const playlist = ["music/inde.mp3", "music/Dramatic.mp3", "music/Epic.mp3","music/Legend.mp3","music/Eternity.mp3"];
+const playlist = ["music/inde.mp3", "music/Dramatic.mp3", "music/Epic.mp3","music/Legend.mp3"];
 let currentTrack = 0;
 
 function updateTrackSource() {
